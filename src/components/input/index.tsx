@@ -1,6 +1,6 @@
-import { RegisterOptions, UseFormRegister} from 'react-hook-form'
+import { RegisterOptions, UseFormRegister } from "react-hook-form";
 
-interface InputProps{
+interface InputProps {
   type: string;
   placeholder: string;
   name: string;
@@ -9,8 +9,15 @@ interface InputProps{
   rules?: RegisterOptions;
 }
 
-export function Input({ name, placeholder, type, register, rules, error }: InputProps){
-  return(
+export function Input({
+  name,
+  placeholder,
+  type,
+  register,
+  rules,
+  error,
+}: InputProps) {
+  return (
     <div>
       <input
         className="w-full border-2 rounded-md h-11 px-2"
@@ -21,5 +28,5 @@ export function Input({ name, placeholder, type, register, rules, error }: Input
       />
       {error && <p className="my-1 text-red-500">{error}</p>}
     </div>
-  )
+  );
 }
