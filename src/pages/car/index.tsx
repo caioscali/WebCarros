@@ -3,7 +3,7 @@ import { Container } from "../../components/container";
 import { FaWhatsapp } from "react-icons/fa";
 import { useNavigate, useParams } from "react-router-dom";
 
-import { getDoc, doc, snapshotEqual } from "firebase/firestore";
+import { getDoc, doc } from "firebase/firestore";
 import { db } from "../../services/firebaseConnection";
 
 import { Swiper, SwiperSlide } from "swiper/react";
